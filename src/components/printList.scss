@@ -1,0 +1,56 @@
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__element {
+    border: 1px solid grey;
+    border-radius: 10px;
+    word-break: break-all;
+    width: inherit;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 12px 3px rgba(2, 69, 134, 0.19);
+  }
+  &__paragraph {
+    margin: 3px 5px;
+    background-color: white;
+    word-spacing: 2px;
+  }
+  &__span {
+    color: #e88528;
+    background-color: white;
+    font-weight: bold;
+  }
+}
+@media (min-width: 768px) {
+  .list {
+    &__element {
+      width: inherit;
+      padding: 15px 0 15px 20px;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.loading {
+  margin: 0 30vw;
+  width: 55px;
+  height: 55px;
+  border: 10px solid rgb(224, 223, 223);
+  border-top: 10px solid #024586;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

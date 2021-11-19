@@ -1,0 +1,39 @@
+.sectionPagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Ubuntu, sans-serif;
+  margin: 40px 0;
+  &__button {
+    font-size: 15px;
+    padding: 8px;
+    margin: 10px;
+    border: 2px #024586 solid;
+    border-radius: 5px;
+    color: #024586;
+    font-weight: normal;
+    word-spacing: 10px;
+    background-color: #02448638;
+  }
+  &__paragraph {
+    color: #024586;
+  }
+}
+@media (min-width: 450px) {
+  .sectionPagination {
+    justify-content: space-around;
+    align-items: center;
+    &__button {
+      margin: 0;
+    }
+  }
+  .buttonLeft {
+    order: -2;
+  }
+  .paragraph {
+    order: -1;
+  }
+}
+.fas {
+  background-color: transparent;
+}

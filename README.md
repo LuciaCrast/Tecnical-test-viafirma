@@ -21,7 +21,7 @@ Ejecute el siguiente comando para instalar todos los paquetes necesarios
 
 > npm start
 
-## Nota
+## Note
 
 > Problema de CORS en el endpoint proporcionado:
 >

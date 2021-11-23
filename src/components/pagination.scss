@@ -6,6 +6,7 @@
   margin: 40px 0;
   &__button {
     font-size: 15px;
+    cursor: pointer;
     padding: 8px;
     margin: 10px;
     border: 2px #024586 solid;
@@ -14,6 +15,9 @@
     font-weight: normal;
     word-spacing: 10px;
     background-color: #02448638;
+  }
+  &__button:hover {
+    background-color: #087df370;
   }
   &__paragraph {
     color: #024586;
